@@ -53,7 +53,6 @@ public class PersonManagement {
         System.out.printf("%s %-18s %-18s %-18s\n", "Index", "Vorname", "Nachname", "Alter");
         for (Person person : personList)
         System.out.printf("%-5s %s\n", personList.indexOf(person) + 1, person);
-        
     }
    // public void battleRoyal() {
      //   System.out.println("not yet implemented");
