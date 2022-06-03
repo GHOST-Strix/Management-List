@@ -1,3 +1,4 @@
+package main.java;
 
 import java.util.*;
 
@@ -32,12 +33,13 @@ public class PersonManagement {
                 System.out.println("Du hast keine Zahl verwendet, versuche nochmal.");
                 System.out.print("Gib deinen Alter :");
                 scanner.nextLine();
+                }
 
-            }
+
         }
         System.out.println("Danke");
         personList.add(new Person (firstName, lastName, age));
-        System.out.println(personList.size() + " Person(en) gespeichert");
+        System.out.println(personList.size() + " main.java.Person(en) gespeichert");
     }
 
     public void remove() {
@@ -48,8 +50,8 @@ public class PersonManagement {
 
     public void list() {
 
-      //  System.out.println(personList.size() + " Person(en):");
-        System.out.printf("%s Person(en):\n", personList.size());
+      //  System.out.println(personList.size() + " main.java.Person(en):");
+        System.out.printf("%s main.java.Person(en):\n", personList.size());
         System.out.printf("%s %-18s %-18s %-18s\n", "Index", "Vorname", "Nachname", "Alter");
         for (Person person : personList)
         System.out.printf("%-5s %s\n", personList.indexOf(person) + 1, person);
